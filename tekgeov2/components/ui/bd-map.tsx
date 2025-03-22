@@ -36,7 +36,7 @@ export function BangladeshMap({
   const svgRef = useRef<SVGSVGElement>(null)
   const { theme } = useTheme()
   const [hoveredDistrict, setHoveredDistrict] = useState<string | null>(null)
-  const [nodeRefs, setNodeRefs] = useState<Record<string, React.RefObject<HTMLDivElement>>>({})
+  const [nodeRefs, setNodeRefs] = useState<Record<string, React.RefObject<HTMLDivElement|null>>>({})
   const centralRef = useRef<HTMLDivElement>(null)
 
   // Updated coordinates based on the provided Bangladesh map
@@ -67,7 +67,7 @@ export function BangladeshMap({
 
   // Initialize refs for each district
   useEffect(() => {
-    const refs: Record<string, React.RefObject<HTMLDivElement>> = {}
+    const refs: Record<string, React.RefObject<HTMLDivElement|null>> = {}
 
     Object.keys(districtCoordinates).forEach((district) => {
       refs[district] = React.createRef<HTMLDivElement>()
