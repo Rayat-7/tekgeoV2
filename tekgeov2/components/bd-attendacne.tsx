@@ -150,19 +150,19 @@ export default function BangladeshAttendanceMap() {
                           title="Present"
                           value={`${attendanceData[selectedDistrict].present}%`}
                           color="bg-gradient-to-br from-green-500/20 to-green-600/20 border-green-500/30"
-                          icon={<Icons.check className="h-4 w-4 text-green-500" />}
+                          icon={<Icons.check  />}
                         />
                         <AttendanceCard
                           title="Late"
                           value={`${attendanceData[selectedDistrict].late}%`}
                           color="bg-gradient-to-br from-amber-500/20 to-amber-600/20 border-amber-500/30"
-                          icon={<Icons.clock className="h-4 w-4 text-amber-500" />}
+                          icon={<Icons.clock  />}
                         />
                         <AttendanceCard
                           title="Absent"
                           value={`${attendanceData[selectedDistrict].absent}%`}
                           color="bg-gradient-to-br from-red-500/20 to-red-600/20 border-red-500/30"
-                          icon={<Icons.x className="h-4 w-4 text-red-500" />}
+                          icon={<Icons.x />}
                         />
                       </div>
                     </div>
@@ -192,7 +192,7 @@ export default function BangladeshAttendanceMap() {
                             className="flex items-center gap-2 text-xs p-2 rounded-lg bg-blue-950/20 border border-blue-900/20"
                           >
                             <div className="h-6 w-6 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-600/20 flex items-center justify-center">
-                              <Icons.user className="h-3 w-3 text-blue-400" />
+                              <Icons.user/>
                             </div>
                             <div className="flex-1">
                               <p className="text-white/90">Employee #{Math.floor(Math.random() * 1000)}</p>
@@ -207,7 +207,7 @@ export default function BangladeshAttendanceMap() {
                   </div>
                 ) : (
                   <div className="flex flex-col items-center justify-center h-64 text-center">
-                    <Icons.map className="h-12 w-12 text-blue-500/50 mb-4" />
+                    <Icons.map  />
                     <p className="text-blue-200/70">Select a region on the map to view detailed statistics</p>
                   </div>
                 )}
@@ -224,28 +224,28 @@ export default function BangladeshAttendanceMap() {
             title="Total Employees"
             value="1,810"
             change="+12%"
-            icon={<Icons.users className="h-5 w-5" />}
+            icon={<Icons.users />}
             color="bg-gradient-to-br from-blue-500/10 to-indigo-600/10 border-blue-500/20"
           />
           <StatCard
             title="Avg. Attendance"
             value="84.5%"
             change="+3.2%"
-            icon={<Icons.check className="h-5 w-5" />}
+            icon={<Icons.check />}
             color="bg-gradient-to-br from-green-500/10 to-emerald-600/10 border-green-500/20"
           />
           <StatCard
             title="Office Locations"
             value="32"
             change="+2"
-            icon={<Icons.building className="h-5 w-5" />}
+            icon={<Icons.building />}
             color="bg-gradient-to-br from-amber-500/10 to-orange-600/10 border-amber-500/20"
           />
           <StatCard
             title="Remote Workers"
             value="425"
             change="+45"
-            icon={<Icons.laptop className="h-5 w-5" />}
+            icon={<Icons.laptop />}
             color="bg-gradient-to-br from-purple-500/10 to-pink-600/10 border-purple-500/20"
           />
         </div>
