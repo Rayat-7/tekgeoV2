@@ -161,17 +161,17 @@ export function AttendanceNotifications() {
                   <div className="flex items-center gap-1">
                     {notification.status === "Present" && (
                       <span className="flex h-4 w-4 items-center justify-center rounded-full bg-green-500/20 text-green-400">
-                        <Icons.check className="h-2 w-2" />
+                        <Icons.check />
                       </span>
                     )}
                     {notification.status === "Late" && (
                       <span className="flex h-4 w-4 items-center justify-center rounded-full bg-amber-500/20 text-amber-400">
-                        <Icons.clock className="h-2 w-2" />
+                        <Icons.clock />
                       </span>
                     )}
                     {notification.status === "Absent" && (
                       <span className="flex h-4 w-4 items-center justify-center rounded-full bg-red-500/20 text-red-400">
-                        <Icons.x className="h-2 w-2" />
+                        <Icons.x  />
                       </span>
                     )}
                     <span className="text-[10px] text-blue-200/70">{notification.time}</span>
