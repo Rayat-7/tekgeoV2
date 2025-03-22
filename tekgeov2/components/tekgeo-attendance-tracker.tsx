@@ -246,7 +246,7 @@ export default function TekGeoAttendanceTracker({
                   position="center"
                   gradient="from-blue-600 to-indigo-600"
                 >
-                  <Icons.server className="h-10 w-10" />
+                  <Icons.server  />
                 </Node>
               </div>
               <div className="flex flex-col justify-center">
