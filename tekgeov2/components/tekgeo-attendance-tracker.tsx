@@ -12,7 +12,7 @@ import { motion,useInView } from "framer-motion"
 function SimplifiedBangladeshMap() {
   const containerRef = useRef<HTMLDivElement>(null)
   const centralRef = useRef<HTMLDivElement>(null)
-  const [nodeRefs, setNodeRefs] = useState<Record<string, React.RefObject<HTMLDivElement>>>({})
+  const [nodeRefs, setNodeRefs] = useState<Record<string, React.RefObject<HTMLDivElement|null>>>({})
 
   // District coordinates (simplified for the hero section)
   const districtCoordinates = {
@@ -28,10 +28,10 @@ function SimplifiedBangladeshMap() {
 
   // Initialize refs for each district
   useEffect(() => {
-    const refs: Record<string, React.RefObject<HTMLDivElement>> = {}
+    const refs: Record<string, React.RefObject<HTMLDivElement| null>> = {}
 
     Object.keys(districtCoordinates).forEach((district) => {
-      refs[district] = React.createRef<HTMLDivElement>()
+      refs[district] = React.createRef<HTMLDivElement | null>()
     })
 
     setNodeRefs(refs)
