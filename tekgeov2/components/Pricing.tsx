@@ -102,7 +102,7 @@ export default function PricingSection() {
             >
               <Card
                 className={cn(
-                  "relative h-full overflow-hidden bg-gradient-to-br border backdrop-blur-sm",
+                  "relative h-full overflow-hidden bg-gradient-to-br border backdrop-blur-sm hover:border-blue-400",
                   tier.gradient || "from-blue-950/40 to-indigo-950/40 border-blue-900/30",
                   tier.popular && "shadow-[0_0_30px_-12px_rgba(59,130,246,0.5)]",
                 )}

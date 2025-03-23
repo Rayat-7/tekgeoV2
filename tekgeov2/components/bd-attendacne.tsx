@@ -106,7 +106,7 @@ export default function BangladeshAttendanceMap() {
 
         <div className="  grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           <div className="lg:col-span-2">
-            <Card className=" hidden sm:block bg-black/40 border border-blue-800/30  overflow-hidden rounded-xl">
+            <Card className=" hidden sm:block bg-black/40 border-3 border-blue-800/30  overflow-hidden rounded-xl hover:border-3 hover:border-blue-400">
               <div className=" mb-2 ml-3">
                 <Tabs defaultValue="employees"  className="p-4" onValueChange={(v) => setViewMode(v as any)}>
                   <TabsList className="bg-slate-900  ">
@@ -225,28 +225,28 @@ export default function BangladeshAttendanceMap() {
             value="1,810"
             change="+12%"
             icon={<Icons.users />}
-            color="bg-gradient-to-br from-blue-500/10 to-indigo-600/10 border-blue-500/20"
+            color="bg-gradient-to-br from-blue-500/10 to-indigo-600/10 border-blue-500/20 hover:border-blue-500"
           />
           <StatCard
             title="Avg. Attendance"
             value="84.5%"
             change="+3.2%"
             icon={<Icons.check />}
-            color="bg-gradient-to-br from-green-500/10 to-emerald-600/10 border-green-500/20"
+            color="bg-gradient-to-br from-green-500/10 to-emerald-600/10 border-green-500/20 hover:border-green-500"
           />
           <StatCard
             title="Office Locations"
             value="32"
             change="+2"
             icon={<Icons.building />}
-            color="bg-gradient-to-br from-amber-500/10 to-orange-600/10 border-amber-500/20"
+            color="bg-gradient-to-br from-amber-500/10 to-orange-600/10 border-amber-500/20 hover:border-amber-500"
           />
           <StatCard
             title="Remote Workers"
             value="425"
             change="+45"
             icon={<Icons.laptop />}
-            color="bg-gradient-to-br from-purple-500/10 to-pink-600/10 border-purple-500/20"
+            color="bg-gradient-to-br from-purple-500/10 to-pink-600/10 border-purple-500/20 hover:border-purple-500"
           />
         </div>
       </div>

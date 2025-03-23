@@ -150,7 +150,7 @@ export function AttendanceNotifications() {
               )}
             >
               <Avatar className="h-8 w-8 border border-white/10">
-                <AvatarImage src={notification.avatar} alt={notification.name} />
+                <AvatarImage loading="lazy" src={notification.avatar} alt={notification.name} />
                 <AvatarFallback className="bg-gradient-to-br from-indigo-500 to-purple-600 text-xs text-white">
                   {notification.initials}
                 </AvatarFallback>

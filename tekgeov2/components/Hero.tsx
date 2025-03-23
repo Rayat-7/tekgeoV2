@@ -84,13 +84,13 @@ const HeroSection: React.FC = () => {
             </span>
           </div>
           
-          <h1 className="text-4xl font-custom md:text-5xl lg:text-8xl font-semibold text-white leading-tight animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
+          <h1 className="text-4xl font-custom md:text-5xl lg:text-7xl font-semibold text-white leading-tight animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
             The next era<br /> of <span className="text-gradient-blue">Attendance</span>
           </h1>
           
           <p className="text-lg md:text-xl text-slate-400 animate-fade-in opacity-0 " style={{ animationDelay: '0.6s' }}>
              {/* TekGeo is the most advanced employee monitoring system yet, built for the remote work era */}
-            The most advanced remote employee monitoring system.
+            TekGeo's most advanced remote employee monitoring system.
           </p> 
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center animate-fade-in opacity-0" style={{ animationDelay: '0.8s' }}>

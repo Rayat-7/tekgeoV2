@@ -7,6 +7,7 @@ import Footer from "@/components/Footer"
 import PricingSection from "@/components/Pricing"
 import YouTubeVideoCarousel from "@/components/carousel"
 import VideoSection from "@/components/VideoSection"
+import { BlogSection } from "@/components/Blog"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <BangladeshAttendanceMap />
       <TekGeoAttendanceTracker />
       <YouTubeVideoCarousel />
+      <BlogSection />
       <PricingSection />
       <Footer/>
     </main>

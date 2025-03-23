@@ -211,7 +211,7 @@ export default function TekGeoAttendanceTracker({
           {/* Main visualization container */}
           <div
             className={cn(
-              "relative mx-auto h-[500px] w-full overflow-hidden rounded-xl bg-black/40 backdrop-blur-sm  border-blue-400 border-2",
+              "relative mx-auto h-[500px] w-full overflow-hidden rounded-xl bg-black/40 backdrop-blur-sm  border-blue-400 border-2 hover:border-2 hover:border-backdrop-blur-xl hover:border-blue-300",
               className,
             )}
             ref={containerRef}
@@ -330,25 +330,25 @@ export default function TekGeoAttendanceTracker({
 
           {/* Stats section */}
           <div className="mt-16 grid grid-cols-2 gap-8 text-center md:grid-cols-4">
-            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 bg-blue-950/20 p-4 backdrop-blur-sm">
+            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 hover:border-blue-400 bg-blue-950/20 p-4 backdrop-blur-sm">
               <div className="mb-2 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-3xl font-bold text-transparent">
                 98%
               </div>
               <div className="text-sm text-blue-200/70">Attendance Accuracy</div>
             </div>
-            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 bg-blue-950/20 p-4 backdrop-blur-sm">
+            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 hover:border-blue-400 bg-blue-950/20 p-4 backdrop-blur-sm">
               <div className="mb-2 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-3xl font-bold text-transparent">
                 50+
               </div>
               <div className="text-sm text-blue-200/70">Companies</div>
             </div>
-            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 bg-blue-950/20 p-4 backdrop-blur-sm">
+            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 hover:border-blue-400 bg-blue-950/20 p-4 backdrop-blur-sm">
               <div className="mb-2 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-3xl font-bold text-transparent">
                 1000+
               </div>
               <div className="text-sm text-blue-200/70">Employees Tracked</div>
             </div>
-            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 bg-blue-950/20 p-4 backdrop-blur-sm">
+            <div className="flex flex-col items-center rounded-lg border border-blue-900/30 hover:border-blue-400 bg-blue-950/20 p-4 backdrop-blur-sm">
               <div className="mb-2 bg-gradient-to-r from-white to-blue-300 bg-clip-text text-3xl font-bold text-transparent">
                 30%
               </div>

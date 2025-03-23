@@ -66,12 +66,12 @@ const navItems = [
       {
         title: "Blog",
         description: "Latest updates and tech insights",
-        href: "#blog",
+        href: "#documentation",
       },
       {
         title: "Case Studies",
         description: "Success stories from our customers",
-        href: "#case-studies",
+        href: "#documentation",
       },
     ],
   },
