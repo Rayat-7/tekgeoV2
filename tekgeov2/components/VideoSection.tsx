@@ -78,7 +78,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
           {isInView && (
             <iframe
               ref={videoRef}
-              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&playlist=${videoId}&iv_load_policy=3&fs=0&disablekb=1&origin=${window.location.origin}&enablejsapi=1&playsinline=1&color=white&hl=en&cc_load_policy=0&autohide=1`}
+              src={`https://www.youtube.com/embed/${videoId}?start=13&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&loop=1&playlist=${videoId}&iv_load_policy=3&fs=0&disablekb=1&origin=${window.location.origin}&enablejsapi=1&playsinline=1&color=white&hl=en&cc_load_policy=0&autohide=1`}
               title="Silent preview video"
               className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -95,7 +95,7 @@ const VideoSection: React.FC<VideoSectionProps> = ({
           <button 
             onClick={() => setOpen(true)}
             aria-label="Open full video"
-            className="absolute bottom-4 right-4 p-2 bg-tekgeo-blue rounded-full hover:bg-tekgeo-blue-light transition-colors z-10 group"
+            className="absolute bottom-4 right-4 p-2 bg-blue-500 rounded-full hover:bg-tekgeo-blue-light transition-colors z-10 group"
           >
             <Maximize2 className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
           </button>
