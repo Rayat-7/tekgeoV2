@@ -44,8 +44,8 @@ export default function AnimatedBeamMultipleOutputDemo({
       className={cn("relative flex h-[500px] w-full items-center justify-center overflow-hidden p-10 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-[#021526] via-[#03346e] to-[#6eacda]", className)}
       ref={containerRef}
     >
-      <div className="flex size-full max-w-lg flex-row items-stretch justify-between gap-10 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-[#021526] via-[#03346e] to-[#6eacda]">
-        <div className="flex flex-col justify-center gap-2">
+      <div  className="flex size-full max-w-lg flex-row items-stretch justify-between gap-10 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-[#021526] via-[#03346e] to-[#6eacda]">
+        <div  className="flex flex-col justify-center gap-2">
           <Circle ref={div1Ref}>
             <Icons.googleDrive />
           </Circle>

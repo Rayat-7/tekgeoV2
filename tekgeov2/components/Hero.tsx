@@ -84,7 +84,7 @@ const HeroSection: React.FC = () => {
             </span>
           </div>
           
-          <h1 className="text-4xl font-custom md:text-5xl lg:text-7xl font-semibold text-white leading-tight animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
+          <h1 className="text-4xl font-custom md:text-5xl lg:text-8xl font-semibold text-white leading-tight animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
             The next era<br /> of <span className="text-gradient-blue">Attendance</span>
           </h1>
           
@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
               Learn more
             </a>
             
-            <a href="#demo" className="px-8 py-3 glass-card text-white rounded-full hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group">
+            <a href="#features" className="px-8 py-3 glass-card text-white rounded-full hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 group">
               Request Demo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </a>

@@ -187,7 +187,7 @@ export default function TekGeoAttendanceTracker({
   const isInView = useInView(containerRef, { once: true, margin: "0px 0px -200px 0px" })
 
   return (
-  <div className=" font-custom relative overflow-hidden bg-black px-4 py-16 md:px-8 md:py-18">
+  <div id="features" className=" font-custom relative overflow-hidden bg-black px-4 py-16 md:px-8 md:py-18">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#1a1a3a,_transparent_50%)] opacity-40"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_#0f172a,_transparent_50%)] opacity-30"></div>
 
