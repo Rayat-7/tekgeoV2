@@ -8,7 +8,7 @@ export default function TekGeoLogo() {
   const textRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 });
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 10 });
 
     // Outline drawing animation
     tl.fromTo(
@@ -69,7 +69,7 @@ export default function TekGeoLogo() {
           opacity="0"
         />
       </svg>
-      <span ref={textRef} className="text-xl font-bold font-custom text-white tracking-wide">
+      <span ref={textRef} className="text-xl font-semibold font-custom text-white tracking-wide">
         TEKGEO
       </span>
     </div>
