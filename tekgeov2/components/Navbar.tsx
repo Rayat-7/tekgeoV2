@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react"
 import { Menu, X, MapPin, ChevronDown } from "lucide-react"
 import { motion, AnimatePresence } from "motion/react"
 import { cn } from "@/lib/utils"
+import TekGeoLogo from "./logo"
 
 // Navigation items with dropdown menus
 const navItems = [
@@ -201,10 +202,10 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center space-x-2">
-            <div className="h-9 w-9 rounded-full bg-gradient-to-tr from-blue-600 to-blue-400 flex items-center justify-center shadow-lg shadow-blue-500/20">
-              <MapPin className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-white font-bold text-xl tracking-tight">TekGeo</span>
+            {/* <div className="h-9 w-9 rounded-full bg-gradient-to-tr from-blue-600 to-blue-400 flex items-center justify-center shadow-lg shadow-blue-500/20"> */}
+            <TekGeoLogo/>
+            {/* </div> */}
+            
           </a>
         </div>
 

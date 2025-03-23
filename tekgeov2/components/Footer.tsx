@@ -9,6 +9,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Github, Mail, MapPin, Phone } f
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useIsMobile } from "./hooks/use-mobile"
+import TekGeoLogo from "./logo"
 // import { useIsMobile } from "@/hooks/use-mobile"
 
 export default function Footer() {
@@ -55,7 +56,7 @@ export default function Footer() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#1a1a3a,_transparent_50%)] opacity-30"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_#0f172a,_transparent_50%)] opacity-20"></div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-24 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 gap-10 pb-16 md:grid-cols-2 lg:grid-cols-5">
           <motion.div
@@ -64,11 +65,12 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-2"
           >
-            <div className="mb-6 flex items-center">
-              <div className="mr-3 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600">
+            <div className="mb-4 flex items-center">
+              <TekGeoLogo/>
+              {/* <div className="mr-3 flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600">
                 <MapPin className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">TekGeo</span>
+              <span className="text-xl font-bold text-white">TekGeo</span> */}
             </div>
             <p className="mb-6 max-w-md text-blue-200/80">
               Revolutionizing attendance tracking with geolocation technology. Empower your distributed teams with
@@ -123,11 +125,12 @@ export default function Footer() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mb-12 border-t border-blue-900/30 pt-8"
+          className="mb-12  "
         >
           <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-            <span className="text-sm font-medium text-blue-200/80">Subscribe to our newsletter</span>
+            <span className="text-sm font-medium text-blue-200/80"></span>
             <div className="w-full flex flex-col sm:flex-row sm:items-center gap-2 md:w-auto">
+              <span className="text-sm mr-6 font-medium text-blue-200/80">Subscribe to our newsletter</span>
               <Input
                 type="email"
                 placeholder="Enter your email"
